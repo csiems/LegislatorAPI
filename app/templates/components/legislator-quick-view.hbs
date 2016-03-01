@@ -1,0 +1,22 @@
+
+<h4 {{action 'showQuickView'}} class="finger">{{legislator.first_name}} {{legislator.last_name}} ({{legislator.party}}) <span class="{{glyphicon-view isQuickViewShowing}}" aria-hidden="true" ></span></h4>
+{{#if isQuickViewShowing}}
+  <form class="">
+    <div class="form-group">
+      <p>Contact Form: {{legislator.contact_form}}</p>
+    </div>
+    <div class="form-group">
+      <p>Phone: {{legislator.phone}}</p>
+    </div>
+    <div class="form-group">
+      <p>Email: {{legislator.oc_email}}</p>
+    </div>
+    <div class="form-group">
+      <p>Office Address: {{legislator.office}}</p>
+    </div>
+    <div class="form-group">
+      <p>Term Ending: {{legislator.term_end}}</p>
+    </div>
+  </form>
+  {{#link-to legislator-full-view}}Find out more about {{legislator.first_name}} {{legislator.last_name}} {{/link-to}}
+{{/if}}

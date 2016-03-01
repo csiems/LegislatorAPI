@@ -1,13 +1,13 @@
 <h1>Your Senators:</h1>
   {{#each model as |legislator|}}
-    {{# if (eq legislator.chamber 'senate')}}
-      <h3> {{legislator.first_name}} {{legislator.last_name}}<br>Contact: <a href=  {{legislator.contact_form}}>{{legislator.contact_form}}</a></h3>
-    {{/ if}}
+    {{#if (isEqual legislator.chamber 'senate')}}
+      {{legislator-quick-view legislator=legislator}}
+    {{/if}}
   {{/each}}
 
 <h1>Your Representative:</h1>
 {{#each model as |legislator|}}
-  {{# if (eq legislator.chamber 'house')}}
-    <h3> {{legislator.first_name}} {{legislator.last_name}}<br>Contact: <a href=  {{legislator.contact_form}}>{{legislator.contact_form}}</a></h3>
-  {{/ if}}
+  {{#if (isEqual legislator.chamber 'house')}}
+    {{legislator-quick-view legislator=legislator}}
+  {{/if}}
 {{/each}}
