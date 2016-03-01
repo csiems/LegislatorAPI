@@ -18,5 +18,5 @@
       <p>Term Ending: {{legislator.term_end}}</p>
     </div>
   </form>
-  {{#link-to legislator-full-view}}Find out more about {{legislator.first_name}} {{legislator.last_name}} {{/link-to}}
+  {{#link-to 'legislator-committees' legislator.bioguide_id}}Find out more about {{legislator.first_name}} {{legislator.last_name}}'s committees {{/link-to}}
 {{/if}}

@@ -10,7 +10,6 @@ export default Ember.Component.extend({
       } else {
         this.set('isQuickViewShowing', true);
       }
-      // console.log(this.get('isQuickViewShowing'))
     }
   }
 });

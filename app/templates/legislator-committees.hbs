@@ -1,0 +1,13 @@
+<h1>Committees:</h1>
+{{#each model as |committee|}}
+  {{#if (isEqual committee.subcommittee false)}}
+    {{committee-tile committee=committee}}
+  {{/if}}
+{{/each}}
+
+<h1>Subcommittees:</h1>
+{{#each model as |committee|}}
+  {{#if (isEqual committee.subcommittee true)}}
+    {{committee-tile committee=committee}}
+  {{/if}}
+{{/each}}
