@@ -1,0 +1,5 @@
+<h1>{{model.1.sponsor.title}}. {{model.1.sponsor.first_name}} {{model.1.sponsor.last_name}}'s bills:</h1>
+
+{{#each model as |bill|}}
+  {{bill-tile bill=bill}}
+{{/each}}

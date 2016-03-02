@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('results', {path: '/results/:zip'});
   this.route('legislator-committees', {path: '/committees/:bioguide_id'});
+  this.route('legislator-bills', {path: '/bills/:bioguide_id'});
 });
 
 export default Router;

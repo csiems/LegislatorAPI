@@ -1,0 +1,116 @@
+body {
+  background-color: #DEE2E3;
+}
+
+.navbar {
+  background-color: #B9C4C7;
+}
+
+// .gly-spin {
+//   -webkit-animation: spin 2s infinite linear;
+//   -moz-animation: spin 2s infinite linear;
+//   -o-animation: spin 2s infinite linear;
+//   animation: spin 2s infinite linear;
+// }
+// @-moz-keyframes spin {
+//   0% {
+//     -moz-transform: rotate(0deg);
+//   }
+//   100% {
+//     -moz-transform: rotate(359deg);
+//   }
+// }
+// @-webkit-keyframes spin {
+//   0% {
+//     -webkit-transform: rotate(0deg);
+//   }
+//   100% {
+//     -webkit-transform: rotate(359deg);
+//   }
+// }
+// @-o-keyframes spin {
+//   0% {
+//     -o-transform: rotate(0deg);
+//   }
+//   100% {
+//     -o-transform: rotate(359deg);
+//   }
+// }
+// @keyframes spin {
+//   0% {
+//     -webkit-transform: rotate(0deg);
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     -webkit-transform: rotate(359deg);
+//     transform: rotate(359deg);
+//   }
+// }
+
+.finger {
+  cursor: pointer;
+}
+
+form {
+  margin: 10px;
+}
+
+a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.oswald {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+}
+
+
+.no-style {
+  &:link, &:visited, &:hover, &:active {
+    text-decoration: none;
+    color: black;
+  }
+
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  line-height: 51px;
+  font-size: 46px;
+  text-transform: uppercase;
+  margin: 23px 0 23px 0;
+}
+
+h2 {
+  font-family: 'Oswald', serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 29px;
+  margin: 23px 0 23px 0;
+}
+
+h3, strong {
+  font-family: 'Oswald', serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 17px 0 19px 0;
+}
+
+h4 {
+  font-family: 'Droid Serif', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 0 17px 0;
+}
+
+p {
+  font-family: 'Droid Serif', serif;
+  font-size: 15px;
+  line-height: 23px;
+  margin: 0 0 23px 0;
+}
